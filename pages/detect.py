@@ -4,10 +4,8 @@ import os
 from PIL import Image
 import cv2, os, random
 import numpy as np
-from openai import OpenAI
 
-#Set up
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+
 
 # -------------- MODEL  --------------
 
