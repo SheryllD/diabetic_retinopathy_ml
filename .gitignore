@@ -2,4 +2,4 @@ test_images/
 .streamlit/secrets.toml
 *.toml
 DR_ML.md
-__pycache__/
+**/__pycache__/
