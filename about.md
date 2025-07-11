@@ -77,12 +77,12 @@ After these adjustments, the model achieved:
 
 **Accuracy: 94%**
 
-Precision (DR):      0.95
+- Precision (DR):      0.95
 Recall (DR):         0.93
 F1-Score (DR):       0.94
 Overall Accuracy:    94%
 
-Precision & Recall: Balanced across both DR and No_DR classes
+- Precision & Recall: Balanced across both DR and No_DR classes
 
 This marks a dramatic improvement from the initial 60% accuracy seen with the imbalanced dataset.
 
