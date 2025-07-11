@@ -1,7 +1,7 @@
 # Diabetic Retinopathy Prediction
 
 ### What is Diabetic Retinopathy?
-Diabetic Retinopathy (DR) is a progressive eye condition caused by damage to the blood vessels in the retina — the light-sensitive layer at the back of the eye — due to prolonged high blood sugar levels. It is one of the leading causes of vision loss and blindness among working-age adults globally.
+Diabetic Retinopathy (DR) is a progressive eye condition caused by damage to the blood vessels in the retina (the light-sensitive layer at the back of the eye). Due to prolonged high blood sugar levels. It is one of the leading causes of vision loss and blindness among working-age adults globally.
 
 DR affects individuals with Type 1 or Type 2 diabetes, and its progression can be silent in early stages, making regular screening and early detection crucial.
 
