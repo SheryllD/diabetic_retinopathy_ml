@@ -1,7 +1,7 @@
-streamlit 
-tensorflow
-Pilllow
+streamlit
+tensorflow==2.13.0
+Pillow
 opencv-python
 matplotlib
 numpy
-OpenAI
+openai

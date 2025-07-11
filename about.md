@@ -5,6 +5,11 @@ Diabetic Retinopathy (DR) is a progressive eye condition caused by damage to the
 
 DR affects individuals with Type 1 or Type 2 diabetes, and its progression can be silent in early stages, making regular screening and early detection crucial.
 
+![Retina Image](https://thumbayuniversityhospital.com/wp-content/uploads/2021/04/diabetic-retina-1.jpg)
+<small>Image source: <a href="https://thumbayuniversityhospital.com/diabetic-retinopathy/" target="_blank">Thumbay University Hospital – Diabetic Retinopathy</a></small>
+
+--- 
+
 ### What Causes It?
 The main cause of diabetic retinopathy is chronic hyperglycaemia (high blood sugar), which weakens and damages the retinal capillaries over time. As the damage progresses, blood vessels may:
 
@@ -20,6 +25,8 @@ Several risk factors increase the likelihood of developing DR:
 - Smoking
 - Pregnancy
 
+--- 
+
 ### Is It Preventable?
 While diabetic retinopathy may not be entirely preventable, its onset and progression can often be delayed or minimised through:
 
@@ -28,6 +35,8 @@ While diabetic retinopathy may not be entirely preventable, its onset and progre
 - Quitting smoking
 - Attending regular eye exams, ideally annually
 
+--- 
+
 ### Prognosis and Diagnosis
 Prognosis varies depending on how early the disease is detected and managed. In early stages, vision can often be preserved with timely treatment and lifestyle interventions. However, in advanced stages, complications like macular oedema or retinal detachment may result in irreversible vision loss.
 
@@ -35,6 +44,8 @@ Diagnosis typically involves a dilated eye exam by an ophthalmologist and may in
 - Retinal photography
 - Optical Coherence Tomography (OCT)
 - Fluorescein angiography
+
+---
 
 ### Why Early Detection Matters
 Early-stage DR often has no visible symptoms, but damage may already be occurring. If left undiagnosed, it can silently progress to a stage where treatment is more complex and less effective. That’s why early detection is key — it enables prompt interventions that can prevent severe outcomes.
@@ -46,10 +57,12 @@ Machine learning (ML), particularly deep learning and Convolutional Neural Netwo
 - Serve as a decision-support tool for ophthalmologists and healthcare providers
 Machine learning models can augment clinical workflows by improving detection speed, accuracy, and accessibility.
 
+--- 
+
 ### About This Machine Learning Project
 This project was developed by Sheryll Dumapal to demonstrate how machine learning can be used to support diabetic retinopathy screening and diagnosis through image classification.
 
-### Model Overview
+#### Model Overview
 The project began with a highly imbalanced dataset and set out to perform binary image classification to distinguish between Diabetic Retinopathy (DR) and healthy retinal images (No_DR) using Convolutional Neural Networks (CNNs). Initial experiments employed the EfficientNet family of models, known for their performance in image-based tasks. Despite incorporating strategies such as data augmentation, class weighting, undersampling, and image preprocessing, the model's performance remained limited due to the skewed class distribution.
 
 To improve stability and reduce bias, a more balanced dataset from Kaggle was selected, prompting the development of a custom CNN architecture tailored specifically for the classification task.
@@ -72,7 +85,8 @@ To enhance generalisation and reduce overfitting, several techniques were applie
 - Accuracy and AUC tracked as evaluation metrics
 - Early stopping implemented to prevent overfitting and retain the best-performing model
 
-#### Performance
+**Performance:**
+
 After these adjustments, the model achieved:
 
 **Accuracy: 94%**
@@ -86,12 +100,16 @@ Overall Accuracy:    94%
 
 This marks a dramatic improvement from the initial 60% accuracy seen with the imbalanced dataset.
 
+--- 
+
 ### Why Machine Learning Matters
 - Early detection of diabetic retinopathy can prevent irreversible vision loss.
 - Manual diagnosis is time-consuming and prone to variability.
 - Machine learning offers a fast, consistent, and scalable way to assist medical professionals.
 
 This approach enables pre-screening, helping reduce the burden on ophthalmologists and improve early intervention rates.
+
+--- 
 
 ### Future Improvements
 Potential extensions of the model include:
@@ -101,11 +119,10 @@ Potential extensions of the model include:
 
 Applying explainable AI techniques like Grad-CAM to visualise decision-making.
 
-### Future Directions
+#### Future Directions
 While this model performs well for binary classification, diabetic retinopathy is a multi-stage condition. Future development could include:
 
-### Multi-class classification across DR severity levels (e.g., mild, moderate, severe, proliferative)
-
+- Multi-class classification across DR severity levels (e.g., mild, moderate, severe, proliferative)
 - Integration of Optical Coherence Tomography (OCT) data for 3D insights
 - Real-time mobile app deployment for broader accessibility
 - Explainable AI tools like Grad-CAM to visualise model decisions

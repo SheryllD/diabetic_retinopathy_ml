@@ -1,16 +1,15 @@
 import streamlit as st
 from openai import OpenAI
+import os 
 
 #Set up
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-# # Sidebar layout
-# with st.sidebar:
-#     st.header("Diabetes Retinopathy")
-#     st.divider()
+current_dir = os.path.dirname(__file__)
+md_path = os.path.join(current_dir, "..", "DR_ML.md")
 
-with open("DR_ML.md", "r") as f: 
-    notebook_text = f.read()
+with open(md_path, "r", encoding="utf-8") as f:
+          notebook_text = f.read()
 
 SYSTEM_PROMPT = """
 You are a knowledgeable and supportive assistant specialising in diabetes and diabetic retinopathy.
@@ -46,6 +45,8 @@ Limit responses to a few sentences unless more detail is requested.
 """
 
 def run_chatbot(): 
+    """This launches the DR chatbot using GPT-4 and Streamlit.  """
+
     st.title("💬 Chatbot")
     st.caption("Type any questions you have about DR, Prevention or Sheryll's project.")
 
