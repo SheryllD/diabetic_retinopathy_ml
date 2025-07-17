@@ -1,4 +1,3 @@
-test_images/
 .streamlit/secrets.toml
 *.toml
 **/__pycache__/
