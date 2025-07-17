@@ -47,7 +47,7 @@ def predict_class_random_from_dir():
     selected_image_file = random.choice(image_files)
     image_path = os.path.join(directory_path, selected_image_file)
     img = Image.open(image_path).convert("RGB")
-    st.image(img, caption=f"Selected image: {selected_image_file}", use_container_width=True)
+    st.image(img, caption=f"Selected image: {selected_image_file}", use_column_width=True)
 
     if model is None:
         st.error("Model failed to load. Cannot make predictions.")
