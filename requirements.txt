@@ -3,6 +3,7 @@ Pillow
 matplotlib
 numpy==1.23.5
 openai
+tensorflow==2.15.0
 ml_dtypes==0.2.0
 opencv-python-headless
 httpcore
