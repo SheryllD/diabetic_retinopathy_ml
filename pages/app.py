@@ -5,7 +5,6 @@ import streamlit as st
 st.set_page_config(page_title="Diabetes Retinopathy Chatbot", page_icon="👁️")
 
 from PIL import Image
-# import cv2
 import numpy as np
 import os
 import random
@@ -14,6 +13,7 @@ import datetime
 from chatbot import run_chatbot
 from detect import run_detection
 from tensorflow.keras.models import load_model
+
 
 #Set up
 with st.sidebar:

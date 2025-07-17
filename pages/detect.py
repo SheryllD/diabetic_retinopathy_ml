@@ -2,7 +2,7 @@ import streamlit as st
 from tensorflow.keras.models import load_model
 import os
 from PIL import Image
-import cv2, os, random
+import os, random
 import numpy as np
 
 
