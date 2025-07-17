@@ -1,9 +1,8 @@
 streamlit
-Pillow
-matplotlib
+tensorflow==2.14.0
 numpy==1.23.5
+Pillow
 openai
-tensorflow==2.15.0
 ml_dtypes==0.2.0
 opencv-python-headless
 httpcore

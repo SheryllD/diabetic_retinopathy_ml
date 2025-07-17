@@ -16,7 +16,6 @@ def load_keras_model():
         return load_model(model_path, compile=False)
     except Exception as e:
         st.error(f"Error loading model: {e}")
-        st.exception(e)
         return None
 
 model = load_keras_model()
