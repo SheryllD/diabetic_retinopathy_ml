@@ -2,6 +2,7 @@ streamlit
 Pillow
 opencv-python
 matplotlib
-numpy
+numpy==1.23.5
 openai
 tensorflow-cpu==2.14.0
+ml_dtypes==0.2.0
