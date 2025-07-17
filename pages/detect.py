@@ -12,14 +12,16 @@ import numpy as np
 def load_keras_model():
     try:
         model_path = os.path.join(os.path.dirname(__file__), "..", "CNN_model.keras")
-        st.write(f"Loading model from: {model_path}")
-        return load_model(model_path, compile=False)
+        st.write("🔍 Attempting to load model from:", model_path)
+        model = load_model(model_path, compile=False)
+        st.success("Model loaded successfully!")
+        return model
     except Exception as e:
-        st.error(f"Error loading model: {e}")
+        st.error("Error loading model:")
+        st.exception(e)
         return None
 
 model = load_keras_model()
-
 
 # -------------- RANDOM CHOOSE --------------
 
