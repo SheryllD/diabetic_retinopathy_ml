@@ -12,8 +12,8 @@ import numpy as np
 def load_keras_model():
     try:
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        model_path = os.path.join(current_dir, "..", "CNN_model.keras")
-        st.write("📂 Attempting to load model from:", model_path)
+        model_path = os.path.join(current_dir, "..", "CNN_model.h5")
+        st.write("Attempting to load model from:", model_path)
 
         model = load_model(model_path, compile=False)
         st.success("Model loaded successfully!")
