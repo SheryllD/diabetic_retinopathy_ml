@@ -11,8 +11,10 @@ import numpy as np
 @st.cache_resource
 def load_keras_model():
     try:
-        model_path = os.path.join(os.path.dirname(__file__), "..", "CNN_model.keras")
-        st.write("🔍 Attempting to load model from:", model_path)
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        model_path = os.path.join(current_dir, "..", "CNN_model.keras")
+        st.write("📂 Attempting to load model from:", model_path)
+
         model = load_model(model_path, compile=False)
         st.success("Model loaded successfully!")
         return model
