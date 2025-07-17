@@ -34,3 +34,4 @@ elif choice == "About The Project":
     st.title("About the Project:")
     st.markdown(about_content, unsafe_allow_html=True)
 
+

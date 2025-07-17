@@ -11,12 +11,11 @@ import numpy as np
 @st.cache_resource
 def load_keras_model():
     try:
-        model_path = os.path.join(os.path.dirname(__file__), "..", "CNN_model.keras")
-        st.write(f"Loading model from: {model_path}")
-        model = load_model(model_path, compile=False)
-        return model
+        model_path = os.path.join(os.path.dirname(__file__), "..", "saved_model")
+        print(f"Loading model from: {model_path}")
+        return load_model(model_path, compile=False)
     except Exception as e:
-        st.exception(e)
+        st.error(f"Error loading model: {e}")
         return None
 
 model = load_keras_model()
